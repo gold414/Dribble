@@ -29,141 +29,84 @@ Publish the website in the LocalHost.
 ```
 drib.html
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Drib</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-    header {
-      background: linear-gradient(135deg, #9c28a7, #502c9f);
-      padding: 50px 0;
-      color: white;
-    }
-    .navbar {
-      background-color: #191987;
-    }
-    .navbar-nav .nav-link {
-      color: white !important;
-      font-weight: 500;
-    }
-    .hero {
-      background:#ea4c89 url('pharmeasy-hero.jpg) no-repaet centrer');
-      color: white;
-      padding: 2%;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-      text-align: center;
-    }
-    .card img {
-      height: 150px;
-      object-fit: contain;
-      padding: 10px;
-    }
-    .card {
-      border: none;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background-color: #343a40;
-      padding: 20px;
-      color: white;
-      margin-top: 50px;
-    }
-    .color{
-      color: grey;
-    }
-    .down{
-      display: inline;
-    }
-    .line{
-      display: inline-flex;
-      height: 200px;
-      width: 1130px;
-    }
-    
-  </style>
+  <title>Dribble</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<body class="bg-info">
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#" style="font-family:cursive;">Dribble</a>
-      <a class="navbar-brand fw-bold" href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Shorts</a>
-      <a class="navbar-brand fw-bold" href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Teams</a>
-      <a class="navbar-brand fw-bold" href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Jobs</a>
-
-      
+      <a class="navbar-brand" href="#">Dribble</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Sign up</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Dive in</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <section class="hero">
+
+  <section class="text-center bg-warning py-4">
     <div class="container">
-      <h3>Thangapzaham(25017581)</h3>
-      <p class="color-white">What are you working on?</p><p class="text-secondary">Dribble is show and tell for designer</p>
-      <a href="#products" class="btn btn-dark btn-lg mt-3">Learn more</a>
-      <a href="#products" class="btn btn-danger btn-lg mt-3">Sign up</a>
+      <h1 class="display-6">DIVE INTO NEW WORLD</h1>
+      <p class="lead display-7">Where you realize you are children</p>
+      <a href="#" class="btn btn-success btn-md">Login</a>
+      <a href="#" class="btn btn-danger btn-md">Sign up</a>
     </div>
   </section>
-  <div class="line">
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm text-center">
-          <img src="chain.jpg" class="card-img-top" alt="Chain">
-          <div class="card-body">
-            <h5 class="card-title">Chain</h5>
-            <p class="card-text text-success fw-bold">₹555</p>
+
+  <section class="py-4">
+    <div class="container">
+      <h2 class="mb-4 text-success text-center">Featured toys</h2>
+      <div class="row g-3 justify-content-center">
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="train.jpg" class="card-img-top" alt="pic1" style="height:200px; object-fit:cover;">
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm text-center">
-          <img src="watch.jpg" class="card-img-top" alt="Watch">
-          <div class="card-body">
-            <h5 class="card-title">watch</h5>
-            <p class="card-text text-success fw-bold">₹666</p>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="ted.jpg" class="card-img-top" alt="pic2" style="height:200px; object-fit:cover;">
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm text-center">
-          <img src="shoe.jpg" class="card-img-top" alt="Shoe">
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text text-success fw-bold">₹444</p>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="toy.jpg" class="card-img-top" alt="pic3" style="height:200px; object-fit:cover;">
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm text-center">
-          <img src="trousar.webp" class="card-img-top" alt="Trousar">
-          <div class="card-body">
-            <h5 class="card-title">Trousar</h5>
-            <p class="card-text text-success fw-bold">₹999</p>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="toys.jpg" class="card-img-top" alt="pic4" style="height:200px; object-fit:cover;">
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <footer class="text-primary bg-warning text-center py-2">
+    <p>&copy;THANGAPAZHAM (25017581)</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
 
 ## OUTPUT:
 
-![alt text](<Screenshot (131).png>)
+![alt text](<Screenshot (136).png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
